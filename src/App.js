@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import './App.css';
+import Header from './components/header/header';
+import About from './components/about/about';
+import resumeData from './components/resume/resumeData';
+//import Portfolio from './components/portfolio/portfolio';
+//import Testimonials from  './components/testimonials/testimonials';
+import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
-          <p>
-            Welcome to my website! This is an obvious work in progress. Meanwhile checkout my LinkedIn below:
-          </p>
-          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/alejandrolimonnaranjo/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-          Alex's LinkedIn
-          </a>
-        </header>
-      </div>
+      <Header resumeData = {resumeData}/>
+      {/* <About />
+      {/* <Resume />
+      <Testimonials /> */}
+      {/* <Contact />
+      <Footer />  */}
+    </div>
     );
   }
 }
